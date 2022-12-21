@@ -1,0 +1,6 @@
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+// щоб підключити цей міксин до себе в код напишіть  @include transition(через кому значення які вам потрібні, наприклад:background-color);

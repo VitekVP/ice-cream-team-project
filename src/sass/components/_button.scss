@@ -1,0 +1,66 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  border: none;
+  min-width: 114px;
+  min-height: 42px;
+  padding: 9px 34px;
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #000000;
+  background-color: var(--accent-color);
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: var(--main-text-color);
+  }
+  &[disabled] {
+    background-color: #ababab;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 2px solid #f8d24e;
+    padding: 9px 32px;
+
+    &:hover {
+      border-color: #0a8817;
+      background-color: transparent;
+    }
+    &:focus {
+      outline-color: #0a8817;
+      color: var(--main-text-color);
+      background-color: transparent;
+    }
+    &[disabled] {
+      border-color: #ababab;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 1119px) {
+      min-width: 108px;
+      min-height: 38px;
+      padding: 9px 24px;
+      border-radius: 8px;
+
+      font-size: 12px;
+      line-height: calc(15 / 12);
+    }
+  }
+}
+
+.button__icon {
+  .button:focus & {
+    fill: var(--main-text-color);
+  }
+}

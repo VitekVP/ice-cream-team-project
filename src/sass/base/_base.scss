@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--main-text-color);
+
+  background-color: #fcfcfc;
+  background-position: center;
+  background-attachment: fixed;
+
+  background-image: url(../images/body-bg/mob/img_mob@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/body-bg/mob/img_mob@2x.png);
+  }
+  // Tablet screen
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/body-bg/tab/img_tab@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/body-bg/tab/img_tab@2x.png);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/body-bg/desk/img_desk@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/body-bg/desk/img_desk@2x.png);
+    }
+  }
+}
