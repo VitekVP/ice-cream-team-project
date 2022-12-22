@@ -22,7 +22,7 @@
 }
 
 .advantages-list {
-    position: relative;
+    // position: relative;
     
     display: flex;
     justify-content: center;
@@ -38,9 +38,19 @@
     }
 }
 
-// .advantages-list__item {
-//     position: relative;
-// }
+.advantages-list__item {
+    position: relative;
+
+    padding-top: 66px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 82px;
+    }
+        
+    @media screen and (min-width:1200px) {
+        padding-top: 90px;
+    }
+}
 
 .advantages-list__item::before {
     content: " ";
@@ -51,7 +61,11 @@
     
         width: 50px;
         height: 50px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
         background-size: 36px;
+        background-repeat: no-repeat;
+        background-position: center;
 }
 
 .advantages-list__title {
@@ -77,52 +91,39 @@
     }
 }
 
-// .advantages-list__title-cow::before,
-// .advantages-list__title-weight::before,
-// .advantages-list__title-ice::before {
-//     content: " ";
-//     position: absolute;
-//     top: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-
-//     width: 50px;
-//     height: 50px;
-//     background-size: contain;
-// }
-
-.advantages-list__title-cow::before {
+.advantages-list__item-cow::before {
+    margin-bottom: 16px;
     background-image: url(../images/advantages/cow.png);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .advantages-list__title-cow::before {
+    .advantages-list__item-cow::before {
         background-image: url(../images/advantages/cow2x.png);
     }
 }
 
-.advantages-list__title-weight::before {
+.advantages-list__item-weight::before {
     background-image: url(../images/advantages/weight.png);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .advantages-list__title-weight::before {
+    .advantages-list__item-weight::before {
         background-image: url(../images/advantages/weight2x.png);
     }
 }
 
-.advantages-list__title-ice::before {
+.advantages-list__item-ice::before {
     background-image: url(../images/advantages/ice.png);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .advantages-list__title-ice::before {
+    .advantages-list__item-ice::before {
         background-image: url(../images/advantages/ice2x.png);
     }
 }
