@@ -85,31 +85,37 @@
     background-image: url(../images/advantages/cow.png);
 }
 
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .advantages-list__title-cow::before {
+        background-image: url(../images/advantages/cow2x.png);
+    }
+}
 
 .advantages-list__title-weight::before {
     background-image: url(../images/advantages/weight.png);
 }
 
-// @media (min-device-pixel-ratio: 2),
-// (min-resolution: 192dpi),
-// (min-resolution: 2dppx) {
-//     .advantages-list__title-weight::before {
-//         background-image: url(../images/advantages/weight2x.png);
-//     }
-// }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .advantages-list__title-weight::before {
+        background-image: url(../images/advantages/weight2x.png);
+    }
+}
 
 .advantages-list__title-ice::before {
     background-image: url(../images/advantages/ice.png);
 }
 
-// @media (min-device-pixel-ratio: 2),
-// (min-resolution: 192dpi),
-// (min-resolution: 2dppx) {
-//     .advantages-list__title-ice::before {
-//         background-image: url(../images/advantages/ice2x.png);
-//     }
-// }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .advantages-list__title-ice::before {
+        background-image: url(../images/advantages/ice2x.png);
+    }
+}
 
 .advantages-list__text {
     margin: 0;
@@ -118,8 +124,7 @@
 
     max-width: 230px;
 
-    color: #FCFCFC;
-    // var(--main-text-color)
+    color: var(--main-text-color);
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
@@ -127,6 +132,7 @@
     @media screen and (min-width:768px) {
         max-width: 152px;
 
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.74;
     }
