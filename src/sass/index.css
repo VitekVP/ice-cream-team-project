@@ -1,0 +1,184 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --accent-color: #f8d24e;
+  /* Fonts */
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Seymour One", sans-serif;
+  /* Text colors */
+  --main-text-color: #fcfcfc;
+  --secondary-text-color: #131313;
+  /* BG colors */
+  --main-bg-color: #84a178;
+  --bg-ice-cream: #aec6a5;
+  --bg-ice-coffee: #efd478;
+  --bg-milkshakes: #d6936d;
+  /* Others */
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--main-text-color);
+  background-color: #fcfcfc;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: url(../images/cursor/cursor.svg), auto;
+  background-image: url(../images/body-bg/mob/img_mob@1x.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body-bg/mob/img_mob@2x.png);
+  }
+}
+@media screen and (min-width: 481px) {
+  body {
+    background-image: url(../images/body-bg/tab/img_tab@1x.png);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body-bg/tab/img_tab@2x.png);
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url(../images/body-bg/desk/img_desk@1x.png);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body-bg/desk/img_desk@2x.png);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 767.98px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  min-width: 114px;
+  min-height: 42px;
+  padding: 9px 34px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  color: #000000;
+  background-color: var(--accent-color);
+}
+.button:hover {
+  background-color: #0a8817;
+}
+.button:focus {
+  background-color: #0a8817;
+  color: var(--main-text-color);
+}
+.button[disabled] {
+  background-color: #ababab;
+}
+.button--transparent {
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  padding: 9px 32px;
+}
+.button--transparent:hover {
+  border-color: #0a8817;
+  background-color: transparent;
+}
+.button--transparent:focus {
+  outline-color: #0a8817;
+  color: var(--main-text-color);
+  background-color: transparent;
+}
+.button--transparent[disabled] {
+  border-color: #ababab;
+  background-color: transparent;
+}
+@media screen and (max-width: 1119px) {
+  .button--transparent {
+    min-width: 108px;
+    min-height: 38px;
+    padding: 9px 24px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+.button:focus .button__icon {
+  fill: var(--main-text-color);
+}/*# sourceMappingURL=index.css.map */
