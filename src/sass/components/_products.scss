@@ -331,14 +331,17 @@
 
 // button-arrow
 .products__btn {
-  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   position: relative;
@@ -350,8 +353,8 @@
   min-height: 26px;
   min-width: 52px;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  cursor: pointer;
 
   @include transition(transform);
 
@@ -361,10 +364,10 @@
   }
 }
 
-.products__arrow-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: left top;
-}
+// .products__arrow-icon {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   transform-origin: left top;
+// }
