@@ -1,6 +1,39 @@
 .hero__overlay {
+  padding-top: 40px;
+  height: 591px;
   background: var(--main-bg-color);
   background-image: url(../images/hero/point_desctop.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+}
+.hero__title {
+  width: 367px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 38px;
+  line-height: calc(48 / 38);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hero-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 115px;
+}
+
+.button-block {
+  display: flex;
+  gap: 34px;
+}
+
+.lot-block {
+  width: 457px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  padding-left: 240px;
 }
