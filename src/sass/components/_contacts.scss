@@ -1,0 +1,33 @@
+// contacts
+
+.line {
+  display: block;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contacts__name {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+}
+.contacts__container {
+  background-color: var(--main-bg-color);
+
+  text-align: center;
+
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 80px;
+  }
+}
