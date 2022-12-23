@@ -1,0 +1,118 @@
+.customer-reviews {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+}
+
+.container.reviews {
+  padding-inline: 22px;
+  width: 100%;
+
+  // mobile screen
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.swiper-pagination {
+  position: sticky;
+}
+
+.swiper-pagination-bullet {
+  background-color: #d9d9d9;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-bg-color);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-inline: 9px;
+}
+
+.review__photo {
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: #6e6e6e;
+}
+
+.review__text {
+  margin-bottom: 32px;
+  padding: 15px 20px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+
+  font-size: 12px;
+  line-height: 2.55;
+
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    padding: 35px 39px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 28px 80px;
+    border-radius: 24px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 43px 109px;
+
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.review__writter {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
