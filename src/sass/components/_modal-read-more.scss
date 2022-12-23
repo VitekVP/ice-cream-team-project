@@ -42,12 +42,18 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
+  @include transition(transform);
+
   @media screen and (min-width: 768px) {
     max-width: 568px;
     max-height: 449px;
     padding: 32px 60px;
     gap: 32px;
   }
+}
+
+.backdrop-rm.is-hidden .modal-rm {
+  transform: translate(-50%, 75%) scale(0.2);
 }
 
 .modal-rm-btn {
@@ -69,10 +75,19 @@
   background: #fcfcfc;
   border: 1px solid #fcfcfc;
 
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 768px) {
     width: 24px;
     height: 24px;
   }
+}
+
+.modal-rm-icon {
+  fill: currentColor;
 }
 
 .modal-rm-title {
