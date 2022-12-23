@@ -5,16 +5,11 @@ address {
 }
 
 .contacts {
-  // font-style: normal;
   font-weight: 500;
 }
 
 .contacts__container {
-  background-color: var(--main-bg-color);
-
-  // text-align: center;
-
-  padding-bottom: 60px;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 40px;
@@ -23,11 +18,9 @@ address {
   @media screen and (min-width: 1200px) {
     padding-bottom: 120px;
   }
-}
 
-// .container {
-//  display: flex;
-// }
+  background-color: var(--main-bg-color);
+}
 
 .contacts__wrap {
   padding: 40px 32px 24px 32px;
@@ -41,12 +34,10 @@ address {
   margin-right: auto;
   margin-bottom: 20px;
 
-  width: 80px;
+  width: fit-content;
   height: 22px;
   padding: 4px 22px;
 
-  // font-style: normal;
-  // font-weight: 500;
   @include font(12px, 1.17, 0.04em);
 
   align-items: center;
@@ -57,11 +48,8 @@ address {
 }
 
 .contacts__town {
-  // display: block;
   margin-bottom: 8px;
   width: 190px;
-  // font-style: normal;
-  // font-weight: 500;
   @include font(12px, 1.83, 0.04em);
 
   color: var(--secondary-text-color);
@@ -70,12 +58,8 @@ address {
 .contacts__location {
   display: block;
   margin-bottom: 24px;
-  // font-style: normal;
-  // font-weight: 500;
   @include font(12px, 1.83, 0.04em);
 
-  // align-items: center;
-  // text-align: center;
   color: var(--bg-milkshakes);
 }
 
@@ -95,8 +79,6 @@ address {
 
 .contacts__week {
   margin-bottom: 8px;
-  // font-style: normal;
-  // font-weight: 500;
   @include font(12px, 1.83, 0.04em);
 
   color: var(--secondary-text-color);
@@ -110,9 +92,6 @@ address {
   letter-spacing: 0em;
 }
 
-// .contacts__list {
-// }
-
 .contacts__item {
   @include font(12px, 1.6, 0);
   color: var(--secondary-text-color);
@@ -120,9 +99,3 @@ address {
     margin-bottom: 6px;
   }
 }
-
-// .contacts__tel {
-// }
-
-// .contacts__mail {
-// }
