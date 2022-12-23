@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ice</title>
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <!-- style -->
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <!-- js -->
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <include src="./partials/header.html"></include>
-    <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer-reviews.html"></include>
-      <include src="./partials/contacts.html"></include>
-    </main>
-    <include src="./partials/footer.html"></include>
 
-    <include src="./partials/mobile-menu.html"></include>
-    <include src="./partials/modal-about-product.html"></include>
-    <include src="./partials/modal-buy-now.html"></include>
-    <include src="./partials/modal-franchise.html"></include>
-    <include src="./partials/modal-our-locations.html"></include>
-    <include src="./partials/modal-read-more.html"></include>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+    rel="stylesheet" />
+  <!-- style -->
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- js -->
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <include src="./partials/header.html"></include>
+  <main>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+  </main>
+  <include src="./partials/footer.html"></include>
+
+  <include src="./partials/mobile-menu.html"></include>
+  <include src="./partials/modal-about-product.html"></include>
+  <include src="./partials/modal-buy-now.html"></include>
+  <include src="./partials/modal-franchise.html"></include>
+  <include src="./partials/modal-our-locations.html"></include>
+  <include src="./partials/modal-read-more.html"></include>
+
+  <script type="module">
+    import Swiper from 'swiper/swiper-bundle.esm.js';
+    var swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>
