@@ -208,6 +208,15 @@
 .about-button {
   width: 164px;
 
+  &:hover,
+  &[disabled] {
+    @include transition(background-color);
+  }
+
+  &:focus {
+    @include transition(background-color, color);
+  }
+
   @media screen and (max-width: 767.98px) {
     margin: 0 auto;
   }
