@@ -1,7 +1,10 @@
+.footer {
+  background-color: var(--main-bg-color);
+}
+
 .socials {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   gap: 30px;
 
   margin-bottom: 20px;
@@ -24,8 +27,6 @@
   height: 34px;
   border-radius: 50%;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
 }
 
@@ -36,31 +37,27 @@
   &:focus {
     fill: var(--main-text-color);
   }
+
+  @include transition(fill);
 }
 
 .line {
-  border-bottom: 1px solid #e1e1e1; /* Параметры линии */
+  border-top: 1px solid #e1e1e1;
+  /* Параметры линии */
 }
 .footer__ice {
   align-items: flex-end;
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     display: flex;
-    // width: 50%;
-    gap: 65px;
-    // flex-basis: 352px;
+
+    gap: 60px;
   }
 
   @media screen and (min-width: 1200px) {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     display: flex;
     gap: 326px;
-    // align-items: flex-end;
-    // justify-content: space-between;
   }
 }
 
@@ -69,7 +66,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: calc(22 / 18);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
@@ -78,23 +75,23 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
     font-size: 26px;
-    line-height: 32px;
+    line-height: calc(32 / 26);
   }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 14px;
     font-weight: 400;
     font-size: 30px;
-    line-height: 37px;
+    line-height: calc(37 / 30);
   }
 }
 
-.header__ander {
+.header__under {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
-  line-height: 41px;
+  line-height: calc(41 / 34);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -106,13 +103,13 @@
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: 59px;
+    line-height: calc(59 / 48);
     letter-spacing: 0.06em;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 58px;
-    line-height: 71px;
+    line-height: calc(71 / 58);
   }
 }
 
@@ -126,11 +123,9 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 22.32px;
+  line-height: calc(22 / 12);
   letter-spacing: 0.02em;
   text-align: right;
-
-  //   justify-content: flex-end;
   align-items: flex-end;
 
   color: var(--secondary-text-color);
@@ -148,24 +143,23 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 22.32px;
+  line-height: calc(22 / 12);
   letter-spacing: 0.02em;
   display: block;
-  //   align-items: flex-end;
-  //   justify-content: flex-end;
+
   text-align: right;
 
   color: #ffffff;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) and(min-width:768px) {
     font-size: 14px;
-    line-height: 26px;
+    line-height: calc(26 / 14);
     padding-bottom: 28px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: 29.76px;
+    line-height: calc(30 / 16);
   }
 }
 
@@ -192,14 +186,10 @@
 
   color: #7a7a7a;
   @media screen and (min-width: 768px) {
-    // padding-top: 12px;
-    // padding-bottom: 12px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 12px;
-    // padding-top: 12px;
-    // padding-bottom: 12px;
   }
 }
 .copyright__item {
@@ -218,4 +208,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+hr {
+  border: none; /* Убираем границу */
+  background-color: red; /* Цвет линии */
+  color: red; /* Цвет линии для IE6-7 */
+  height: 1px; /* Толщина линии */
+  width: 100vw;
 }
