@@ -3,15 +3,42 @@
     <p class="title-label">tradition and love</p>
     <h2 class="title about-title">how it’s made?</h2>
     <div class="about-field">
-      <div class="about-thumb">
-        <picture>
-          <img
-            src="./images/about/img_s@1x.jpg"
-            alt="cow"
-            width="279"
-            height="278"
-          />
-        </picture>
+      <div class="about-bgi">
+        <div class="about-thumb">
+          <picture class="">
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/about/img_l@1x.jpg 1x,
+                ./images/about/img_l@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/about/img_m@1x.jpg 1x,
+                ./images/about/img_m@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/about/img_s@1x.jpg 1x,
+                ./images/about/img_s@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/about/img_s@1x.jpg"
+              alt="cow"
+              width="490"
+              height="490"
+              loading="lazy"
+            />
+          </picture>
+        </div>
       </div>
       <div class="about-part">
         <ul class="about-list">
