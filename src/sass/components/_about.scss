@@ -40,7 +40,7 @@
 
 .title {
   font-family: var(--secondary-font);
-  //   font-weight: 400;
+
   font-size: 30px;
   line-height: calc(38 / 30);
 
@@ -85,13 +85,8 @@
   width: 279px;
   height: 278px;
 
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
-  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  background: linear-gradient(0deg, #f8d24eb3, #f8d24eb3), #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px #99721740;
   border-radius: 140px;
 
   @media screen and (max-width: 767.98px) {
