@@ -44,7 +44,19 @@
 .line {
   border-top: 1px solid #e1e1e1;
   /* Параметры линии */
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+
+.line__desktop {
+  border-top: 1px solid #e1e1e1;
+  /* Параметры линии */
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .footer__ice {
   align-items: flex-end;
   justify-content: space-between;
@@ -208,12 +220,4 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
-
-hr {
-  border: none; /* Убираем границу */
-  background-color: red; /* Цвет линии */
-  color: red; /* Цвет линии для IE6-7 */
-  height: 1px; /* Толщина линии */
-  width: 100vw;
 }
