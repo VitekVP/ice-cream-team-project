@@ -1,0 +1,128 @@
+.backdrop-location {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 28, 38, 0.4);
+    @include transition (opacity, visibility);
+    overflow-y: auto;
+}
+
+.backdrop-location.is-hidden {
+    opacity: 0;
+    visibility:hidden;
+    pointer-events: none;
+    .modal {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+.modal-location {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 568px;
+    min-height: 458px;
+    padding: 28px;
+    background-color: #fff;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    @media screen and (max-height:365px) {
+        top: 10px;
+        transform: translateX(-50%);
+    }
+    @media screen and (max-width:280px) {
+        width: 100%;
+        min-height: 365px;
+    } 
+
+    @media screen and (min-width:281px) {
+        width: 280px;
+        min-height: 365px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        min-height: 458px;
+        padding:32px 60px;
+    }
+}
+
+.modal-location-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.modal-location-label {
+    @include font (16px, 1.5, 0);
+    font-family: var(--secondary-font);
+    color: var(--secondary-text-color);
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        @include font (20px, 1.4, 0);
+        margin-bottom: 32px;
+    }
+}
+.map {
+    @media screen and (max-width:767px) {
+        width: 224px;
+    }
+    @media screen and (min-width:768px) {
+        width: 448px;
+    }
+}
+.map-img {
+    border-radius: 10px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+    }
+}
+.modal-location-open {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    background: var(--accent-color);
+    border-radius: 10px;
+    width: 134px;
+    margin: 0 auto;
+    @include font (12px, 1.25, 0);
+    color: var(--secondary-text-color);
+    font-family: var(--main-font);
+    font-weight: 600;
+    @media screen and (min-width:768px) {
+        @include font (14px, 1.21, 0);
+        width: 145px;
+    }
+    padding: 12px 34px;
+    &:hover {
+        background-color: #0a8817;
+    }
+      &:focus {
+        background-color: #0a8817;
+        color: var(--main-text-color);
+    }
+      &[disabled] {
+        background-color: #ababab;
+    }
+}
