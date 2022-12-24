@@ -31,7 +31,10 @@
     background-color: #fff;
     border: 2px solid var(--accent-color);
     border-radius: 10px;
-
+    @media screen and (max-height:365px) {
+        top: 10px;
+        transform: translateX(-50%);
+    }
     @media screen and (max-width:280px) {
         width: 100%;
         min-height: 365px;
