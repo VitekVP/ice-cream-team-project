@@ -1,0 +1,33 @@
+.gallery__bg {
+  background-image: linear-gradient(to bottom, #84a178 25%, transparent 25%);
+
+  @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to bottom, #84a178 44%, transparent 44%);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to bottom, #84a178 23%, transparent 23%);
+    }
+}
+
+.gallery__list{
+  margin-right: auto;
+  margin-left: auto;
+
+  border-radius: 24px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 280px;
+          height: 130px;
+      }
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 327px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: 1013px;
+        height: 422px;
+      }
+}
