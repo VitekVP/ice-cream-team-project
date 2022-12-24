@@ -1,10 +1,5 @@
 <div class="mobile-menu js-menu-container" id="mobile-menu">
   <div class="mobile-menu__container">
-    <a class="logo link" href="./index.html" aria-label="Logo">
-      <svg class="logo__icon" width="40" height="38">
-        <use href="./images/mobile-icon/logo.png"></use>
-      </svg>
-    </a>
     <button type="button" class="mobile-menu__close js-close-menu">
       <svg
         class="mobile-menu__icon"
@@ -19,11 +14,35 @@
       </svg>
     </button>
     <div class="mobile-menu__flex">
+      <a class="logo link" href="./index.html" aria-label="Logo">
+        <picture>
+          <source
+            srcset="
+              ./images/mobile-icon/logo.png   1x,
+              ./images/mobile-icon/logo2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/mobile-icon/logo.png"
+            alt="Logo"
+            width="44px"
+            height="48px"
+          />
+        </picture>
+      </a>
+
       <ul class="mobile-menu__list list">
-        <li class="mobile-menu__item">Home</li>
-        <li class="mobile-menu__item">How it’s made?</li>
-        <li class="mobile-menu__item">Our products</li>
-        <li class="mobile-menu__item">Contact</li>
+        <li class="mobile-menu__item"><a href="">Home</a></li>
+        <li class="mobile-menu__item">
+          <a href="#how-made">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#our-product">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
       <button type="submit" class="mobile-menu__last-button">
         Buy now
