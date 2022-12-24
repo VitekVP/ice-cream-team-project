@@ -1,8 +1,8 @@
 .hero__overlay {
   position: relative;
   padding-top: 14px;
-  // padding-bottom: 65px;
-  height: 591px;
+  padding-bottom: 236px;
+
   background: var(--main-bg-color);
   background-image: url(../images/hero/mobile_point@1x.png);
   background-repeat: no-repeat;
@@ -11,12 +11,15 @@
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/hero/tablet_point@1x.png);
-    height: 349px;
+    padding-bottom: 40px;
+    background-size: 100%;
   }
   @media screen and (min-width: 1200px) {
     background-image: url(../images/hero/desktop_point@1x.png);
-    height: 591px;
-    padding-top: 40px;
+
+    padding-top: 45px;
+    padding-bottom: 120px;
+    background-size: 100%;
   }
 }
 .hero__title {
@@ -50,7 +53,7 @@
   gap: 24px;
   margin-bottom: 39px;
   @media screen and (min-width: 1200px) {
-    margin-bottom: 115px;
+    margin-bottom: 109px;
     gap: 28px;
   }
 }
@@ -58,6 +61,32 @@
 .button-block {
   display: flex;
   gap: 12px;
+}
+.button--transparent-link {
+  background-color: transparent;
+  color: var(--accent-color);
+  padding: 12px 24px;
+
+  &:hover {
+    color: #0a8817;
+    background-color: transparent;
+  }
+  &:focus {
+    color: var(--main-text-color);
+    background-color: transparent;
+  }
+  &[disabled] {
+    color: #ababab;
+  }
+  @media screen and (max-width: 1119px) {
+    min-width: 108px;
+    min-height: 38px;
+    padding: 9px 24px;
+    border-radius: 8px;
+
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
 }
 
 .lot-block {
@@ -72,10 +101,14 @@
 .description {
   position: relative;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 140%;
-  padding-left: 180px;
-  padding-bottom: 12px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 12px;
+    line-height: 140%;
+    padding-left: 180px;
+    padding-bottom: 12px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-left: 240px;
@@ -86,36 +119,78 @@
 
 .point-sale {
   position: absolute;
-  top: 53px;
-  right: 16px;
-  &__item:nth-child(2n + 1) {
-    font-weight: 900;
-    font-size: 46px;
-    line-height: calc(56 / 46);
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--secondary-text-color);
-    margin-bottom: 4px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    top: 28px;
+    right: 32px;
+    &__item:nth-child(2n + 1) {
+      font-weight: 900;
+      font-size: 28px;
+      line-height: calc(34 / 28);
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--secondary-text-color);
+      margin-bottom: 4px;
+    }
+    &__item:nth-child(2n) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: calc(10 / 8);
+      text-align: right;
+      margin-bottom: 20px;
+    }
   }
-  &__item:nth-child(2n) {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(17 / 14);
-    text-align: right;
-    margin-bottom: 16px;
+  @media screen and (min-width: 1200px) {
+    top: 53px;
+    right: 16px;
+    &__item:nth-child(2n + 1) {
+      font-weight: 900;
+      font-size: 46px;
+      line-height: calc(56 / 46);
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--secondary-text-color);
+      margin-bottom: 4px;
+    }
+    &__item:nth-child(2n) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(17 / 14);
+      text-align: right;
+      margin-bottom: 16px;
+    }
   }
 }
 .icecream {
   position: absolute;
-  right: 92px;
+
   bottom: 0;
+  @media screen and (max-width: 767px) {
+    transform: translateX(50%);
+    right: 46%;
+    bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 92px;
+    bottom: 0;
+  }
 }
 .lot_icecream {
   position: absolute;
-  left: 32px;
-  bottom: 12px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    left: 32px;
+    bottom: 12px;
+  }
   @media screen and (min-width: 1200px) {
     left: 16px;
     bottom: 65px;
@@ -130,6 +205,12 @@
 .description-arrow {
   position: absolute;
   fill: var(--main-text-color);
-  left: 240px;
-  // bottom: -24px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    left: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 240px;
+  }
 }
