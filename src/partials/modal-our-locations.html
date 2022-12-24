@@ -10,16 +10,21 @@
             <picture>
                 <source media="(min-width: 768px)" 
                 srcset="./images/contacts-modal/dt@1x.jpg 1x, ./images/contacts-modal/dt@2x.jpg 2x">
-                <source media="(max-width: 767px)" 
+                <source  media="(max-width: 767px)" 
                 srcset="./images/contacts-modal/m@1x.jpg 1x, ./images/contacts-modal/m@2x.jpg 2x">
-                <img
+                <img class="map-img img"
                 src="./images/contacts-modal/dt@1x.jpg"
                 alt="Map"
                 />
             </picture>   
         </div>
-        <form >
-            <button class="button modal-location-open" type="submit" formaction="https://www.google.com.ua/maps/@49.6000297,34.5328674,12.88z?hl=ru">Open map</button>
-        </form>
+        <a
+            href="https://www.google.com.ua/maps/@49.6000297,34.5328674,12.88z?hl=ru"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="modal-location-open"
+            >
+            Open map
+        </a>  
     </div>
 </div>
