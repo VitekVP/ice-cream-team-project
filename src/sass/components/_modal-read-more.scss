@@ -6,7 +6,8 @@
   width: 100%;
   height: 100%;
 
-  background-color: transparent;
+  background-color: rgba(25, 28, 38, 0.4);
+  backdrop-filter: blur(1px);
 
   opacity: 1;
   visibility: visible;
@@ -41,6 +42,8 @@
 
   border: 2px solid #f8d24e;
   border-radius: 10px;
+
+  overflow-y: scroll;
 
   @include transition(transform);
 
