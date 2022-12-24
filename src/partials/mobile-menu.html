@@ -1,0 +1,53 @@
+<div class="mobile-menu js-menu-container" id="mobile-menu">
+  <div class="mobile-menu__container">
+    <button type="button" class="mobile-menu__close js-close-menu">
+      <svg
+        class="mobile-menu__icon"
+        width="32"
+        height="32"
+        aria-label="Закриття мoбільного меню"
+      >
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__flex">
+      <a class="logo link" href="./index.html" aria-label="Logo">
+        <picture>
+          <source
+            srcset="
+              ./images/mobile-icon/logo.png   1x,
+              ./images/mobile-icon/logo2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/mobile-icon/logo.png"
+            alt="Logo"
+            width="44px"
+            height="48px"
+          />
+        </picture>
+      </a>
+      <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item"><a href="#home">Home</a></li>
+        <li class="mobile-menu__item">
+          <a href="#how-made">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#our-product">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="js-open-modal button header__button"
+        data-modal="buynow"
+      >
+        Buy now
+        <span class="mobile-menu__last-button-special-symbol">&#62;</span>
+      </button>
+    </div>
+  </div>
+</div>
