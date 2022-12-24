@@ -1,7 +1,7 @@
 .header__container {
   background-color: var(--main-bg-color);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding-top: 12px;
 
   @media screen and (min-width: 768px) {
@@ -16,6 +16,8 @@
 .nav {
   display: flex;
   gap: 28px;
+  transform: translateY(-13px);
+
   @media screen and (max-width: 1199.98px) {
     display: none;
   }
@@ -25,7 +27,7 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   &:hover,
   &:focus {
     color: var(--accent-color);
