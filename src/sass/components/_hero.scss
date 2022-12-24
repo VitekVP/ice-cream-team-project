@@ -1,14 +1,43 @@
 .hero__overlay {
-  padding-top: 40px;
+  position: relative;
+  padding-top: 14px;
+  // padding-bottom: 65px;
   height: 591px;
   background: var(--main-bg-color);
-  background-image: url(../images/hero/point_desctop.png);
+  background-image: url(../images/hero/mobile_point@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 100%;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/tablet_point@1x.png);
+    height: 349px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/desktop_point@1x.png);
+    height: 591px;
+    padding-top: 40px;
+  }
 }
 .hero__title {
-  width: 367px;
+  width: 247px;
   font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    width: 367px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+.hero__title--part {
   font-weight: 400;
   font-size: 38px;
   line-height: calc(48 / 38);
@@ -18,22 +47,89 @@
 .hero-title-block {
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  margin-bottom: 115px;
+  gap: 24px;
+  margin-bottom: 39px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 115px;
+    gap: 28px;
+  }
 }
 
 .button-block {
   display: flex;
-  gap: 34px;
+  gap: 12px;
 }
 
 .lot-block {
-  width: 457px;
+  position: relative;
+  width: 323px;
+
+  @media screen and (min-width: 1200px) {
+    width: 457px;
+  }
 }
 
 .description {
+  position: relative;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 140%;
-  padding-left: 240px;
+  padding-left: 180px;
+  padding-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 240px;
+    padding-bottom: 24px;
+    font-size: 14px;
+  }
+}
+
+.point-sale {
+  position: absolute;
+  top: 53px;
+  right: 16px;
+  &__item:nth-child(2n + 1) {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: calc(56 / 46);
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 4px;
+  }
+  &__item:nth-child(2n) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: right;
+    margin-bottom: 16px;
+  }
+}
+.icecream {
+  position: absolute;
+  right: 92px;
+  bottom: 0;
+}
+.lot_icecream {
+  position: absolute;
+  left: 32px;
+  bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    left: 16px;
+    bottom: 65px;
+  }
+}
+.hero-point {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.description-arrow {
+  position: absolute;
+  fill: var(--main-text-color);
+  left: 240px;
+  // bottom: -24px;
 }
