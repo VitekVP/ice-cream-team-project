@@ -71,3 +71,20 @@
 .burger__icon {
   fill: #ffffff;
 }
+
+.back-scroll {
+  width: 50;
+  height: 50;
+  border-radius: 50%;
+  border-bottom: 1px;
+  background-color: rgba(248, 210, 78, 0.5);
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 50vh;
+  right: 16px;
+  cursor: pointer;
+  color: var(--main-bg-color);
+  font-size: 30px;
+  z-index: 998;
+}
