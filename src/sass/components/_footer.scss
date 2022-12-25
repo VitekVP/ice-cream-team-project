@@ -68,15 +68,6 @@
   }
 }
 
-.line__desktop {
-  border-top: 1px solid #e1e1e1;
-
-  /* Параметры линии */
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
-
 .footer__ice {
   align-items: flex-end;
   justify-content: space-between;
@@ -93,7 +84,7 @@
   }
 }
 
-.header__over {
+.footer__over {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -118,7 +109,7 @@
   }
 }
 
-.header__under {
+.footer__under {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -145,7 +136,7 @@
   }
 }
 
-.header {
+.footer__title {
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     width: 50%;
   }
@@ -196,11 +187,11 @@
 }
 
 .section {
-  padding-top: 40px;
+  // padding-top: 40px;
   padding-bottom: 40px;
 
   @media screen and (min-width: 1200px) {
-    padding-top: 60px;
+    // padding-top: 60px;
     padding-bottom: 60px;
   }
 }
