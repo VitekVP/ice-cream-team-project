@@ -1,9 +1,5 @@
 // contacts
 
-address {
-  font-style: normal;
-}
-
 .contacts {
   font-weight: 500;
 }
@@ -54,7 +50,6 @@ address {
 }
 
 .contacts__name {
-  display: block;
   margin-right: auto;
   margin-bottom: 20px;
 
@@ -157,14 +152,16 @@ address {
   }
 
   color: var(--secondary-text-color);
-}
-.contacts__week:last-child {
-  margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
 }
+
 .contacts__week--color {
   display: block;
   color: #ababab;
@@ -209,10 +206,6 @@ address {
   width: 192px;
 }
 
-:root {
-  --indent: 16px;
-  --items: 3;
-}
 .contacts-card-set {
   display: flex;
   flex-wrap: wrap;
