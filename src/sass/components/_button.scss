@@ -16,6 +16,8 @@
   line-height: calc(18 / 14);
   color: #000000;
   background-color: var(--accent-color);
+  cursor: pointer;
+  @include transition(background-color, color);
 
   &:hover {
     background-color: #0a8817;
@@ -33,6 +35,8 @@
     border: 2px solid #f8d24e;
     padding: 9px 32px;
 
+    @include transition(background-color, color, border-color, outline-color);
+
     &:hover {
       border-color: #0a8817;
       background-color: transparent;
@@ -47,7 +51,7 @@
       background-color: transparent;
     }
 
-    @media screen and (max-width: 1119px) {
+    @media screen and (max-width: 1199.98px) {
       min-width: 108px;
       min-height: 38px;
       padding: 9px 24px;
@@ -60,6 +64,8 @@
 }
 
 .button__icon {
+  @include transition(fill);
+
   .button:focus & {
     fill: var(--main-text-color);
   }
