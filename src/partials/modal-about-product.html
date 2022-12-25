@@ -1,0 +1,121 @@
+<div class="backdrop is-hidden" data-modal="3">
+  <div class="modal" data-modal-window>
+    <h2 class="modal__title">Chololate icecream</h2>
+
+    <div class="modal__img">
+      <img
+        src="./images/modal-about-products/icecream-modal.png"
+        alt="icecream"
+        width="132px"
+        height="132px"
+      />
+    </div>
+
+    <div class="modal__energy">
+      <ul class="modal__energy--list list">
+        <li class="modal__energy--item">
+          <p class="modal__energy--value">320</p>
+          <p class="modal__energy--name">kcal</p>
+        </li>
+
+        <li class="modal__energy--item">
+          <p class="modal__energy--value">4g</p>
+          <p class="modal__energy--name">Protein...</p>
+        </li>
+
+        <li class="modal__energy--item">
+          <p class="modal__energy--value">8,2g</p>
+          <p class="modal__energy--name">Fats</p>
+        </li>
+
+        <li class="modal__energy--item">
+          <p class="modal__energy--value">40,4g</p>
+          <p class="modal__energy--name">Carbs</p>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="modal__ingredients">Ingredients</p>
+      <ul class="ingredients__list list">
+        <li class="ingredients__item">
+          <p>Milk</p>
+          <p>100ml</p>
+        </li>
+
+        <li class="ingredients__item">
+          <p>Belgian chocolate</p>
+          <p>20g</p>
+        </li>
+
+        <li class="ingredients__item">
+          <p>Cream</p>
+          <p>150ml</p>
+        </li>
+
+        <li class="ingredients__item">
+          <p>Cocoa powder</p>
+          <p>30g</p>
+        </li>
+
+        <li class="ingredients__item">
+          <p>Sugar</p>
+          <p>40g</p>
+        </li>
+
+        <li class="ingredients__item">
+          <p>Vanilla sugar</p>
+          <p>10g</p>
+        </li>
+      </ul>
+    </div>
+    <form autocomplete="on">
+      <div class="form__field">
+        <label for="name" class="form__label"></label>
+
+        <div class="form__group">
+          <input
+            type="text"
+            class="form__input"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+        </div>
+
+        <label for="tel" class="form__label"></label>
+        <div class="form__group">
+          <input
+            type="tel"
+            class="form__input"
+            name="tel"
+            id="tel"
+            placeholder="Phone"
+          />
+        </div>
+
+        <label for="comment" class="form__label"></label>
+        <div class="form__group">
+          <textarea
+            class="form__input"
+            name="comment"
+            id="comment"
+            rows="10"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="accept__button">
+        <button type="submit" class="submit__button">Submit</button>
+      </div>
+    </form>
+    <div class="close">
+      <button class="close__button js-modal-close" js-modal-close>
+        <svg class="close__logo" width="24" height="24">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
