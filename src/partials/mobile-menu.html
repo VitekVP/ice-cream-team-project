@@ -11,7 +11,7 @@
       </svg>
     </button>
     <div class="mobile-menu__flex">
-      <a class="logo link" href="./index.html" aria-label="Logo">
+      <a class="mobile-menu__logo" href="./index.html" aria-label="Logo">
         <picture>
           <source
             srcset="
@@ -42,11 +42,13 @@
       </ul>
       <button
         type="button"
-        class="js-open-modal button header__button"
+        class="js-open-modal button mobile-menu__button"
         data-modal="buynow"
       >
         Buy now
-        <span class="mobile-menu__last-button-special-symbol">&#62;</span>
+        <svg class="button__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
       </button>
     </div>
   </div>

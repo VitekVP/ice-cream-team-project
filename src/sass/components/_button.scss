@@ -17,6 +17,7 @@
   color: #000000;
   background-color: var(--accent-color);
   cursor: pointer;
+  @include transition(background-color, color);
 
   &:hover {
     background-color: #0a8817;
@@ -33,6 +34,8 @@
     background-color: transparent;
     border: 2px solid #f8d24e;
     padding: 9px 32px;
+
+    @include transition(background-color, color, border-color, outline-color);
 
     &:hover {
       border-color: #0a8817;
@@ -61,6 +64,8 @@
 }
 
 .button__icon {
+  @include transition(fill);
+
   .button:focus & {
     fill: var(--main-text-color);
   }
