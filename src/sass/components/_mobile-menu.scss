@@ -1,5 +1,7 @@
 .mobile-menu {
-  position: absolute;
+  // position: absolute;
+  position: fixed;
+
   top: 0;
   left: 0;
   width: 100vw;
@@ -9,7 +11,12 @@
   transform: translateX(-100%);
   @include transition(transform);
 
+  z-index: 999;
+
   overflow-y: scroll;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {
@@ -130,6 +137,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 152px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 // .mobile-menu__button {
