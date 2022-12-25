@@ -1,5 +1,7 @@
 .footer {
   background-color: var(--main-bg-color);
+
+  position: relative;
 }
 
 .socials {
@@ -43,11 +45,26 @@
 
 .line {
   border-top: 1px solid #e1e1e1;
-  // margin-left: auto;
-  // margin-right: auto;
-  /* Параметры линии */
-  @media screen and (min-width: 768px) {
-    display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  @media screen and(min-width:1200px) {
+    position: relative;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    width: 768px;
+    left: 0;
+    right: 0;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    position: absolute;
+    width: 480px;
+    left: 0;
+    right: 0;
   }
 }
 
