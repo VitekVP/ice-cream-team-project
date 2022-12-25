@@ -31,9 +31,7 @@
   }
 }
 
-// New project
-
-.modal {
+.modal__about {
   @media screen and (max-width: 480px) {
     width: 280px;
     height: 968px;
@@ -46,7 +44,7 @@
   border-radius: 10px;
 }
 
-.modal__title {
+.modal-about__title {
   @media screen and (max-width: 480px) {
     position: relative;
     width: 142px;
@@ -65,7 +63,7 @@
   color: #131313;
 }
 
-.modal__img {
+.modal-about__img {
   @media screen and (max-width: 480px) {
     padding-left: 74px;
     padding-right: 74px;
@@ -76,14 +74,14 @@
   padding-bottom: 24px;
 }
 
-.modal__energy {
+.modal-about__energy {
   @media screen and (max-width: 480px) {
     padding-bottom: 40px;
   }
   padding-bottom: 48px;
 }
 
-.modal__energy--list {
+.modal-about__energy--list {
   @media screen and (max-width: 480px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -96,7 +94,7 @@
   gap: 20px;
 }
 
-.modal__energy--item {
+.modal-about__energy--item {
   @media screen and (max-width: 480px) {
     width: 53px;
     height: 72px;
@@ -114,7 +112,7 @@
   height: 90px;
 }
 
-.modal__energy--value {
+.modal-about__energy--value {
   @media screen and (max-width: 480px) {
     width: 43px;
     height: 43px;
@@ -139,7 +137,7 @@
   color: #131313;
 }
 
-.modal__energy--name {
+.modal-about__energy--name {
   @media screen and (max-width: 480px) {
     width: 38px;
     height: 12px;
@@ -161,7 +159,7 @@
   color: #131313;
 }
 
-.modal__ingredients {
+.modal-about__ingredients {
   text-align: center;
   font-family: 'Montserrat';
   font-style: normal;
@@ -172,7 +170,7 @@
   color: #131313;
 }
 
-.form__input {
+.modal-about__form-input {
   padding: 11px 16px;
 
   width: 200px;
@@ -188,7 +186,7 @@
   resize: none;
 }
 
-.form__field {
+.modal-about__form-field {
   display: flex;
   flex-direction: column;
 
@@ -247,14 +245,14 @@
   }
 }
 
-.accept__button {
+.modal-about__accept-button {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.ingredients__list {
+.modal-about__ingredients-list {
   @media screen and (max-width: 480px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -266,7 +264,7 @@
   padding-bottom: 48px;
 }
 
-.ingredients__item {
+.modal-about__ingredients-item {
   display: flex;
   justify-content: space-between;
   font-family: 'Montserrat';
@@ -275,14 +273,14 @@
   color: #131313;
 }
 
-.ingredients__item:not(:last-child) {
+.modal-about__ingredients-item:not(:last-child) {
   @media screen and (max-width: 480px) {
     padding-bottom: 16px;
   }
   padding-bottom: 11px;
 }
 
-.close__button {
+.modal-about__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -295,13 +293,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close__logo {
+.modal-about__close-logo {
   position: absolute;
   top: 5px;
   left: 4.5px;
 }
 
-.submit__button {
+.modal-about__submit-button {
   @media screen and (max-width: 480px) {
     width: 132px;
     height: 42px;
