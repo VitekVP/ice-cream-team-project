@@ -1,23 +1,23 @@
 .gallery {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .container.gallery__bg {
   padding: 0 20px;
 
   background-image: linear-gradient(to bottom, #84a178 25%, transparent 25%);
-  
-    @media screen and (min-width: 768px) {
-      padding: 0 32px;
 
-      background-image: linear-gradient(to bottom, #84a178 44%, transparent 44%);
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding: 0 93px;
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
 
-      background-image: linear-gradient(to bottom, #84a178 23%, transparent 23%);
-    }
+    background-image: linear-gradient(to bottom, #84a178 44%, transparent 44%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 93px;
+
+    background-image: linear-gradient(to bottom, #84a178 23%, transparent 23%);
+  }
 }
 
 .gallery__list {
@@ -27,17 +27,15 @@ max-width: 100%;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-      height: 327px;
-        width: 704px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      height: 422px;
-        width: 1013px;
-    }
+    height: 327px;
+    width: 704px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 422px;
+    width: 1013px;
+  }
 }
-
-
 
 .gallery_item {
   position: absolute;
