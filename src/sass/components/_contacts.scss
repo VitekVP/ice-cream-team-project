@@ -189,7 +189,7 @@
   }
 }
 
-.contacts-button {
+.contacts__btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,11 +202,11 @@
   gap: 16px;
 }
 
-.contacts-button--width {
+.contacts__button {
   width: 192px;
 }
 
-.contacts-card-set {
+.contacts-card {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
@@ -223,7 +223,7 @@
   }
 }
 
-.contacts-card-set__item {
+.contacts-card__item {
   flex-basis: calc(
     (100% - var(--indent) * (var(--items) - 1)) / (var(--items))
   );
