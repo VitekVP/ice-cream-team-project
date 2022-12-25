@@ -10,23 +10,20 @@
   backdrop-filter: blur(1px);
 
   overflow-y: auto;
-  opacity: 1;
-  visibility: visible;
-
-  @include transition(opacity, visibility);
-}
-
-.backdrop-rm.is-hidden {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+
+  @include transition(opacity, visibility);
 }
 
 .modal-rm {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(75%) scale(0.2);
+
+  opacity: 0;
+  visibility: hidden;
 
   display: flex;
   flex-direction: column;
@@ -43,7 +40,7 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
-  @include transition(transform);
+  @include transition(transform, opacity, visibility);
 
   @media screen and (max-height: 459px) {
     top: 10px;
@@ -60,8 +57,22 @@
   }
 }
 
-.backdrop-rm.is-hidden .modal-rm {
-  transform: translate(-50%, 75%) scale(0.2);
+.modal-rm.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop-rm.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop-rm.active .modal-rm {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.noScroll {
+  overflow: hidden;
 }
 
 .modal-rm-btn {
