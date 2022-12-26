@@ -4,12 +4,17 @@
       <h2 class="modal-about__title">Choсolate icecream</h2>
 
       <div class="modal-about__img">
-        <img
+        <!-- <img
           src="./images/modal-about-products/icecream-modal.png"
           alt="icecream"
-          width="132px"
-          height="132px"
-        />
+          width="132"
+          height="132"
+        > -->
+        <div class="modal-about__bgi">
+          <div class="modal-about__bgi-container">
+
+          </div>
+        </div>
       </div>
 
       <div class="modal-about__energy">
@@ -72,16 +77,16 @@
       </div>
       <form autocomplete="on">
         <div class="modal-about__form-field">
-          <label for="name" class="modal-about__form-label"></label>
+          <label for="user-name" class="modal-about__form-label"></label>
 
           <div class="modal-about__form-group">
             <input
               type="text"
               class="modal-about__form-input"
-              name="name"
-              id="name"
+              name="user-name"
+              id="user-name"
               placeholder="Name"
-            />
+              >
           </div>
 
           <label for="tel" class="modal-about__form-label"></label>
@@ -92,7 +97,7 @@
               name="tel"
               id="tel"
               placeholder="Phone"
-            />
+            >
           </div>
 
           <label for="comment" class="modal-about__form-label"></label>
@@ -106,10 +111,12 @@
             ></textarea>
           </div>
         </div>
-
-        <button type="submit" class="button modal-about__submit-button">
-          Submit
-        </button>
+        <div class="modal-about__btn">
+          <button type="submit" class="button modal-about__submit-button">
+            Submit
+          </button>
+        </div>
+        
       </form>
 
       <div class="close">
