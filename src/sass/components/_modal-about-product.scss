@@ -28,28 +28,25 @@
 }
 
 .modal__about {
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     width: 280px;
-    height: 968px;
   }
+  height: 968px;
   position: relative;
   top: 10px;
   width: 568px;
-  max-height:968px;
   background-color: var(--main-text-color);
   border-radius: 10px;
 }
 
 .modal-about__title {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     position: relative;
     width: 142px;
     left: 25%;
     margin-top: 28px;
     margin-bottom: 20px;
   }
-
   text-align: center;
   margin-top: 32px;
   margin-bottom: 24px;
@@ -61,7 +58,7 @@
 }
 
 .modal-about__img {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     padding-left: 74px;
     padding-right: 74px;
   }
@@ -71,29 +68,28 @@
   align-items: center;
 }
 
-.modal-about__bgi{
+.modal-about__bgi {
   position: relative;
-
   width: 132px;
   height: 132px;
-
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   border-radius: 50%;
 }
 
-.modal-about__bgi-container{
+.modal-about__bgi-container {
   position: absolute;
   bottom: 10px;
   left: 0;
-
   width: 132px;
   height: 132px;
-
   border-radius: 50%;
-
   overflow: hidden;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -102,7 +98,7 @@
 }
 
 .modal-about__energy {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     margin-top: 22px;
     margin-bottom: 40px;
   }
@@ -111,7 +107,7 @@
 }
 
 .modal-about__energy--list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     padding-left: 20px;
     padding-right: 20px;
     gap: 9px;
@@ -124,7 +120,7 @@
 }
 
 .modal-about__energy--item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     width: 53px;
     height: 72px;
     gap: 10px;
@@ -142,7 +138,7 @@
 }
 
 .modal-about__energy--value {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     width: 43px;
     height: 43px;
   }
@@ -166,7 +162,7 @@
 }
 
 .modal-about__energy--name {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     width: 38px;
     height: 12px;
 
@@ -186,8 +182,8 @@
   color: var(--secondary-text-color);
 }
 
-.modal-about__ingredients{
-  @media screen and (max-width: 767px) {
+.modal-about__ingredients {
+  @media screen and (max-width: 767.9px) {
     margin-bottom: 40px;
   }
   margin-bottom: 48px;
@@ -204,9 +200,8 @@
   color: var(--secondary-text-color);
 }
 
-
 .modal-about__ingredients-list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -223,14 +218,14 @@
 }
 
 .modal-about__ingredients-item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     padding-bottom: 16px;
   }
   padding-bottom: 11px;
 }
 
-.modal-about__form{
-  @media screen and (max-width: 767px) {
+.modal-about__form {
+  @media screen and (max-width: 767.9px) {
     margin-bottom: 24px;
   }
   display: flex;
@@ -262,12 +257,12 @@
     height: 14px;
     font-weight: 400;
     font-size: 12px;
-    line-height: calc(14/12);
+    line-height: calc(14 / 12);
     letter-spacing: 0.01em;
   }
 
   & input {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.9px) {
       width: 240px;
       height: 42px;
       margin-left: 20px;
@@ -282,14 +277,14 @@
   }
 
   & textarea {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.9px) {
       width: 240px;
       height: 84px;
       margin-left: 20px;
       margin-right: 20px;
       margin-bottom: 24px;
     }
-    
+
     width: 368px;
     height: 84px;
 
@@ -300,7 +295,7 @@
 }
 
 .modal-about__accept-button {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.9px) {
     margin-bottom: 28px;
   }
   margin-bottom: 32px;
@@ -333,7 +328,7 @@
   left: 4.5px;
 }
 
-.modal-about__btn{
+.modal-about__btn {
   display: flex;
   justify-content: center;
   align-items: center;
