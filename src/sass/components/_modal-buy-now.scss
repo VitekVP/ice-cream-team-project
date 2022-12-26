@@ -109,8 +109,14 @@
 .bn-order__checkbox {
   display: none;
 
-  &:checked + .bn-product__wrapper .bn-product__photo {
-    opacity: 1;
+  &:checked + .bn-product__wrapper.green {
+    background-color: #96af8c;
+  }
+  &:checked + .bn-product__wrapper.yellow {
+    background-color: var(--bg-ice-coffee);
+  }
+  &:checked + .bn-product__wrapper.brown {
+    background-color: var(--bg-milkshakes);
   }
 }
 
@@ -129,6 +135,7 @@
   border-top: none;
 
   border-radius: 15px;
+  @include transition(opacity);
 
   &.green {
     border-color: #96af8c;
@@ -136,7 +143,6 @@
   }
 
   &.yellow {
-    background: var(--bg-ice-coffee);
     border-color: var(--bg-ice-coffee);
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   }
@@ -199,9 +205,7 @@
 .bn-product__photo {
   border-radius: 50%;
   position: absolute;
-  opacity: 0;
   transform: translateY(-7px);
-  @include transition(opacity);
 }
 
 .bn-product__name {
