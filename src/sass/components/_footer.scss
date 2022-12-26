@@ -35,8 +35,8 @@
 .socials__icon {
   fill: var(--main-bg-color);
 
-  &:hover,
-  &:focus {
+  .socials__link:hover &,
+  .socials__link:focus & {
     fill: var(--main-text-color);
   }
 
