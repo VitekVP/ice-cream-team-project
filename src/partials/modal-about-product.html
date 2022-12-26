@@ -4,16 +4,8 @@
       <h2 class="modal-about__title">Choсolate icecream</h2>
 
       <div class="modal-about__img">
-        <!-- <img
-          src="./images/modal-about-products/icecream-modal.png"
-          alt="icecream"
-          width="132"
-          height="132"
-        > -->
         <div class="modal-about__bgi">
-          <div class="modal-about__bgi-container">
-
-          </div>
+          <div class="modal-about__bgi-container"></div>
         </div>
       </div>
 
@@ -41,8 +33,8 @@
         </ul>
       </div>
 
-      <div>
-        <p class="modal-about__ingredients">Ingredients</p>
+      <div class="modal-about__ingredients">
+        <p class="modal-about__ingredients-title">Ingredients</p>
         <ul class="modal-about__ingredients-list list">
           <li class="modal-about__ingredients-item">
             <p>Milk</p>
@@ -75,50 +67,50 @@
           </li>
         </ul>
       </div>
-      <form autocomplete="on">
-        <div class="modal-about__form-field">
-          <label for="user-name" class="modal-about__form-label"></label>
+      <div class="modal-about__form">
+        <form autocomplete="on">
+          <div class="modal-about__form-field">
+            <label for="user-name" class="modal-about__form-label"></label>
 
-          <div class="modal-about__form-group">
-            <input
-              type="text"
-              class="modal-about__form-input"
-              name="user-name"
-              id="user-name"
-              placeholder="Name"
-              >
+            <div class="modal-about__form-group">
+              <input
+                type="text"
+                class="modal-about__form-input"
+                name="user-name"
+                id="user-name"
+                placeholder="Name"
+              />
+            </div>
+
+            <label for="tel" class="modal-about__form-label"></label>
+            <div class="modal-about__form-group">
+              <input
+                type="tel"
+                class="modal-about__form-input"
+                name="tel"
+                id="tel"
+                placeholder="Phone"
+              />
+            </div>
+
+            <label for="comment" class="modal-about__form-label"></label>
+            <div class="modal-about__form-group">
+              <textarea
+                class="modal-about__form-input"
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Comment"
+              ></textarea>
+            </div>
           </div>
-
-          <label for="tel" class="modal-about__form-label"></label>
-          <div class="modal-about__form-group">
-            <input
-              type="tel"
-              class="modal-about__form-input"
-              name="tel"
-              id="tel"
-              placeholder="Phone"
-            >
-          </div>
-
-          <label for="comment" class="modal-about__form-label"></label>
-          <div class="modal-about__form-group">
-            <textarea
-              class="modal-about__form-input"
-              name="comment"
-              id="comment"
-              rows="10"
-              placeholder="Comment"
-            ></textarea>
-          </div>
-        </div>
-        <div class="modal-about__btn">
-          <button type="submit" class="button modal-about__submit-button">
-            Submit
-          </button>
-        </div>
-        
-      </form>
-
+        </form>
+      </div>
+      <div class="modal-about__btn">
+        <button type="submit" class="button modal-about__submit-button">
+          Submit
+        </button>
+      </div>
       <div class="close">
         <button type="button" class="modal-about__close-button js-modal-close">
           <svg class="modal-about__close-logo" width="24" height="24">
