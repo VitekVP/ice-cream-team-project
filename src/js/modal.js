@@ -71,12 +71,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (a) {
-     
       var parentModal = this.closest('.modal');
       document.body.classList.remove('noScroll');
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
-       const iframeSrc = Youtube.src;
+      const iframeSrc = Youtube.src;
       Youtube.src = iframeSrc;
     });
   });
@@ -96,7 +95,6 @@ document.addEventListener('DOMContentLoaded', function () {
   );
 
   overlay.addEventListener('click', function () {
-    
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
     document.body.classList.remove('noScroll');
