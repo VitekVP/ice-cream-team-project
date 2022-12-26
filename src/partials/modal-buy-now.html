@@ -6,44 +6,44 @@
   </button>
   <form name="bn-order__form" autocomplete="on">
     <strong class="bn-order__title">Buy now</strong>
-    <ul class="bn-order__product">
-      <li class="bn-product__item">
+    <div class="bn-order__product">
+      <div class="bn-product__item">
         <input class="bn-order__checkbox" type="checkbox" name="ice-cream" id="ice-cream" value="ice-cream">
         <label class="bn-product__wrapper green" for="ice-cream">
-          <div class="bn-product__photo-wrapper green"> Buy
+          <span class="bn-product__photo-wrapper green"> Buy
             <img class="bn-product__photo" srcset="
             ./images/modal-buy-now/photo1@1x.jpg 1x,
             ./images/modal-buy-now/photo1@2x.jpg 2x
             " src=./images/modal-buy-now/photo1@1x.jpg alt="photo" width="132" height="132">
-          </div>
-          <p class="bn-product__name">ice cream</p>
+          </span>
+          <span class="bn-product__name">ice cream</span>
         </label>
-      </li>
-      <li class="bn-product__item">
+      </div>
+      <div class="bn-product__item">
         <input class="bn-order__checkbox" type="checkbox" name="ice-coffee" id="ice-coffee" value="ice-coffee">
         <label class="bn-product__wrapper yellow" for="ice-coffee">
-          <div class="bn-product__photo-wrapper yellow">Buy
+          <span class="bn-product__photo-wrapper yellow">Buy
             <img class="bn-product__photo" srcset="
               ./images/modal-buy-now/photo2@1x.jpg 1x,
               ./images/modal-buy-now/photo2@2x.jpg 2x
               " src=./images/modal-buy-now/photo2@1x.jpg alt="photo" width="132" height="132">
-          </div>
-          <p class="bn-product__name">ice coffee</p>
+          </span>
+          <span class="bn-product__name">ice coffee</span>
         </label>
-      </li>
-      <li class="bn-product__item">
+      </div>
+      <div class="bn-product__item">
         <input class="bn-order__checkbox" type="checkbox" name="milkshake" id="milkshake" value="milkshake">
         <label class="bn-product__wrapper brown" for="milkshake">
-          <div class="bn-product__photo-wrapper brown">Buy
+          <span class="bn-product__photo-wrapper brown">Buy
             <img class="bn-product__photo" srcset="
               ./images/modal-buy-now/photo3@1x.jpg 1x,
               ./images/modal-buy-now/photo3@2x.jpg 2x
               " src=./images/modal-buy-now/photo3@1x.jpg alt="photo" width="132" height="132">
-          </div>
-          <p class="bn-product__name">milkshake</p>
+          </span>
+          <span class="bn-product__name">milkshake</span>
         </label>
-      </li>
-    </ul>
+      </div>
+    </div>
 
     <div class="bn-order__fields">
       <label class="bn-order__label" for="name"></label>
@@ -54,8 +54,8 @@
       <input class="bn-order__input" id="phone" name="phone" type="tel" placeholder="Phone" pattern="^[0-9]{6,12}$"
         required>
 
-      <label class="bn-order__label bn-order__comment" for="comment"></label>
-      <textarea class="bn-order__input bn-order__input--comment" id="comment" name="comment" rows="10"
+      <label class="bn-order__label bn-order__comment" for="bn-order-comment"></label>
+      <textarea class="bn-order__input bn-order__input--comment" id="bn-order-comment" name="comment" rows="10"
         placeholder="Comment"></textarea>
       <button class="bn-order__submit-btn button" type="submit">Submit</button>
     </div>
