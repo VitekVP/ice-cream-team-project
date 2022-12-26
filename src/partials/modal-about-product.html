@@ -1,5 +1,5 @@
 <div class="modal__container modal" data-modal="3">
-  <div class="backdrop">
+  <div class="backdrop ">
     <div class="modal__about">
       <h2 class="modal-about__title">Choсolate icecream</h2>
 
@@ -41,8 +41,8 @@
         </ul>
       </div>
 
-      <div>
-        <p class="modal-about__ingredients">Ingredients</p>
+      <div class="modal-about__ingredients">
+        <p class="modal-about__ingredients-title">Ingredients</p>
         <ul class="modal-about__ingredients-list list">
           <li class="modal-about__ingredients-item">
             <p>Milk</p>
@@ -75,42 +75,45 @@
           </li>
         </ul>
       </div>
-      <form autocomplete="on">
-        <div class="modal-about__form-field">
-          <label for="user-name" class="modal-about__form-label"></label>
-
-          <div class="modal-about__form-group">
-            <input
-              type="text"
-              class="modal-about__form-input"
-              name="user-name"
-              id="user-name"
-              placeholder="Name"
+      <div class="modal-about__form">
+        <form autocomplete="on">
+          <div class="modal-about__form-field">
+            <label for="user-name" class="modal-about__form-label"></label>
+  
+            <div class="modal-about__form-group">
+              <input
+                type="text"
+                class="modal-about__form-input"
+                name="user-name"
+                id="user-name"
+                placeholder="Name"
+                >
+            </div>
+  
+            <label for="tel" class="modal-about__form-label"></label>
+            <div class="modal-about__form-group">
+              <input
+                type="tel"
+                class="modal-about__form-input"
+                name="tel"
+                id="tel"
+                placeholder="Phone"
               >
+            </div>
+  
+            <label for="comment" class="modal-about__form-label"></label>
+            <div class="modal-about__form-group">
+              <textarea
+                class="modal-about__form-input"
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Comment"
+              ></textarea>
+            </div>
           </div>
+      </div>
 
-          <label for="tel" class="modal-about__form-label"></label>
-          <div class="modal-about__form-group">
-            <input
-              type="tel"
-              class="modal-about__form-input"
-              name="tel"
-              id="tel"
-              placeholder="Phone"
-            >
-          </div>
-
-          <label for="comment" class="modal-about__form-label"></label>
-          <div class="modal-about__form-group">
-            <textarea
-              class="modal-about__form-input"
-              name="comment"
-              id="comment"
-              rows="10"
-              placeholder="Comment"
-            ></textarea>
-          </div>
-        </div>
         <div class="modal-about__btn">
           <button type="submit" class="button modal-about__submit-button">
             Submit
