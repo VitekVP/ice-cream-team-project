@@ -51,3 +51,8 @@ body {
     }
   }
 }
+a:hover,
+button:hover,
+.swiper-pagination-bullet:hover {
+  cursor: url(../images/cursor/cursor.svg), auto;
+}
