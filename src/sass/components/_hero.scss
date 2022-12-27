@@ -94,7 +94,7 @@
     width: 458px;
   }
   &__icecream {
-    animation: spin 15s linear 0s infinite;
+    animation: spin 60s linear 0s infinite;
     position: absolute;
     display: none;
 
@@ -106,6 +106,9 @@
     @media screen and (min-width: 1200px) {
       left: 16px;
       bottom: 65px;
+    }
+    &:hover {
+      animation: spin_hover 1s linear 0s infinite;
     }
   }
 
@@ -199,6 +202,7 @@
   }
 
   &:hover {
+    transform: scale(1.05);
     animation: shake 0.3s linear infinite;
   }
 }
@@ -226,31 +230,31 @@ summary {
     transform: translate(0px, 1px) rotate(0deg);
   }
   10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg) scale(1.02);
   }
   20% {
-    transform: translate(-2px, -1px) rotate(1deg);
+    transform: translate(-2px, -1px) rotate(1deg) scale(1.01);
   }
   30% {
-    transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg) scale(1.02);
   }
   40% {
-    transform: translate(1px, 0px) rotate(1deg);
+    transform: translate(1px, 0px) rotate(1deg) scale(1.01);
   }
   50% {
-    transform: translate(-1px, 1px) rotate(-1deg);
+    transform: translate(-1px, 1px) rotate(-1deg) scale(1.02);
   }
   60% {
-    transform: translate(-1px, 1px) rotate(0deg);
+    transform: translate(-1px, 1px) rotate(0deg) scale(1.01);
   }
   70% {
-    transform: translate(2px, 1px) rotate(-1deg);
+    transform: translate(2px, 1px) rotate(-1deg) scale(1.01);
   }
   80% {
-    transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg) scale(1.02);
   }
   90% {
-    transform: translate(1px, 0px) rotate(0deg);
+    transform: translate(1px, 0px) rotate(0deg) scale(1.01);
   }
   100% {
     transform: translate(1px, 0px) rotate(-1deg);
@@ -263,5 +267,14 @@ summary {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes spin_hover {
+  from {
+    transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.1);
   }
 }
