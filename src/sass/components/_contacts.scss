@@ -233,4 +233,9 @@
   @media screen and (min-width: 768px) {
     --items: 3;
   }
+
+  @include transition(transform);
+  &:hover {
+    transform: scale(1.05);
+  }
 }
