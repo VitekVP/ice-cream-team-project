@@ -108,7 +108,10 @@
       bottom: 65px;
     }
     &:hover {
-      animation: spin_hover 1s linear 0s infinite;
+      animation: spin 2s linear 0s infinite;
+    }
+    &:active {
+      animation: spin 1s linear 0s infinite;
     }
   }
 
@@ -267,14 +270,5 @@ summary {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes spin_hover {
-  from {
-    transform: rotate(0deg) scale(1.1);
-  }
-  to {
-    transform: rotate(360deg) scale(1.1);
   }
 }
