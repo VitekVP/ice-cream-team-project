@@ -39,8 +39,10 @@
 }
 
 .header__button {
+  position: relative;
   min-width: 152px;
   min-height: 42px;
+  overflow: hidden;
 
   @media screen and (max-width: 767.98px) {
     display: none;
@@ -48,6 +50,25 @@
   @media screen and (min-width: 1200px) {
     align-self: flex-end;
   }
+}
+.header__button:before {
+  content: '';
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    #fff 40%,
+    #fff 60%,
+    transparent 100%
+  );
+  transform: translate(-100%, -25%) rotate(-25deg);
+  animation: blick 7s infinite;
 }
 
 .header__burger {
@@ -87,4 +108,17 @@
   color: var(--main-bg-color);
   font-size: 30px;
   z-index: 998;
+}
+
+// animation
+@keyframes blick {
+  0% {
+    transform: translate(-110%, 50%) rotate(40deg);
+  }
+  20% {
+    transform: translate(110%, -50%) rotate(40deg);
+  }
+  100% {
+    transform: translate(110%, -50%) rotate(40deg);
+  }
 }
