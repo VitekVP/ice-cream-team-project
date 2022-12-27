@@ -93,6 +93,7 @@
   @media screen and (min-width: 1200px) {
     width: 458px;
   }
+
   &__icecream {
     animation: spin 60s linear 0s infinite;
     position: absolute;
@@ -100,15 +101,15 @@
 
     @media screen and (min-width: 768px) {
       display: block;
-      left: 32px;
-      bottom: 12px;
+      left: 0;
+      bottom: -20px;
     }
     @media screen and (min-width: 1200px) {
-      left: 16px;
-      bottom: 65px;
+      left: 0;
+      bottom: -55px;
     }
     &:hover {
-      animation: spin 2s linear 0s infinite;
+      animation: spin 3s linear 0s infinite;
     }
     &:active {
       animation: spin 1s linear 0s infinite;
@@ -119,6 +120,9 @@
     position: relative;
     font-weight: 400;
     display: none;
+    &:hover &-arrow {
+      transform: scale(1.1);
+    }
 
     @media screen and (min-width: 768px) {
       display: block;
@@ -139,9 +143,11 @@
       display: none;
       @media screen and (min-width: 768px) {
         display: block;
+        top: 98px;
         left: 180px;
       }
       @media screen and (min-width: 1200px) {
+        top: 100px;
         left: 240px;
       }
     }
@@ -216,7 +222,7 @@ summary {
 .detail {
   display: none;
   position: absolute;
-  width: 200px;
+  width: 180px;
   @media screen and (min-width: 768px) {
     display: block;
     font-size: 12px;

@@ -24,6 +24,46 @@
         </summary>
         <p class="detail">Lorem ipsum dolor sit amet</p>
       </details>
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/desktop_lot@1x.webp 1x,
+            ./images/hero/desktop_lot@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/desktop_lot@1x.png 1x,
+            ./images/hero/desktop_lot@2x.png 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            ./images/hero/tablet_lot@1x.webp 1x,
+            ./images/hero/tablet_lot@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            ./images/hero/tablet_lot@1x.png 1x,
+            ./images/hero/tablet_lot@2x.png 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          class="lot-block__icecream"
+          src="./images/hero/tablet_lot@1x.png"
+          alt=""
+        />
+      </picture>
     </div>
     <div>
       <ul class="point-sale">
@@ -86,46 +126,6 @@
         type="image/jpg"
       />
       <img class="icecream" src="./images/hero/mobile_icecream@1x.png" alt="" />
-    </picture>
-    <picture>
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./images/hero/desktop_lot@1x.webp 1x,
-          ./images/hero/desktop_lot@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./images/hero/desktop_lot@1x.png 1x,
-          ./images/hero/desktop_lot@2x.png 2x
-        "
-        type="image/jpg"
-      />
-
-      <source
-        media="(max-width: 1199px)"
-        srcset="
-          ./images/hero/tablet_lot@1x.webp 1x,
-          ./images/hero/tablet_lot@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(max-width: 1199px)"
-        srcset="
-          ./images/hero/tablet_lot@1x.png 1x,
-          ./images/hero/tablet_lot@2x.png 2x
-        "
-        type="image/jpg"
-      />
-      <img
-        class="lot-block__icecream"
-        src="./images/hero/tablet_lot@1x.png"
-        alt=""
-      />
     </picture>
   </div>
 </section>
