@@ -54,6 +54,12 @@
   }
 }
 
+.backdrop-rm.active .modal-rm {
+  @media screen and (min-height: 459.1px) {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 .modal-rm.active {
   opacity: 1;
   visibility: visible;
@@ -62,10 +68,6 @@
 .backdrop-rm.active {
   opacity: 1;
   visibility: visible;
-}
-
-.backdrop-rm.active .modal-rm {
-  transform: translate(-50%, -50%) scale(1);
 }
 
 .noScroll {
