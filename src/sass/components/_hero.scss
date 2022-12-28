@@ -1,7 +1,7 @@
 .hero__overlay {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 236px;
+  padding-bottom: 232px;
   background: var(--main-bg-color);
   background-image: url(../images/hero/mobile_point@1x.png);
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   @media screen and (min-width: 1200px) {
     background-image: url(../images/hero/desktop_point@1x.png);
     padding-top: 37px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     background-size: 100%;
   }
 }
@@ -88,7 +88,7 @@
 
 .lot-block {
   position: relative;
-  width: 330px;
+  width: 400px;
 
   @media screen and (min-width: 1200px) {
     width: 458px;
@@ -143,11 +143,11 @@
       display: none;
       @media screen and (min-width: 768px) {
         display: block;
-        top: 98px;
+        top: 80px;
         left: 180px;
       }
       @media screen and (min-width: 1200px) {
-        top: 100px;
+        top: 120px;
         left: 240px;
       }
     }
@@ -201,9 +201,10 @@
 .icecream {
   position: absolute;
   bottom: 0;
+  right: 50%;
+
   @media screen and (max-width: 767px) {
-    transform: translateX(50%);
-    right: 46%;
+    right: 25%;
   }
 
   @media screen and (min-width: 768px) {
