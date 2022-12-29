@@ -41,7 +41,7 @@
 
   @media screen and (max-height: 459px) {
     top: 10px;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(75%) scale(0.2);
   }
 
   @media screen and (min-width: 768px) {
@@ -54,6 +54,16 @@
   }
 }
 
+.backdrop-rm.active .modal-rm {
+  @media screen and (max-height: 459px) {
+    transform: translateX(-50%) scale(1);
+  }
+
+  @media screen and (min-height: 459.1px) {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+}
+
 .modal-rm.active {
   opacity: 1;
   visibility: visible;
@@ -62,10 +72,6 @@
 .backdrop-rm.active {
   opacity: 1;
   visibility: visible;
-}
-
-.backdrop-rm.active .modal-rm {
-  transform: translate(-50%, -50%) scale(1);
 }
 
 .noScroll {
