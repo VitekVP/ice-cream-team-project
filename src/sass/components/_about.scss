@@ -1,15 +1,15 @@
-.about-container {
+.about {
   padding-top: 60px;
   padding-bottom: 50px;
-
-  background-color: #84a178;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
+
+  background-color: var(--main-bg-color);
 }
 
-.title-label {
+.about__subtitle {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -31,7 +31,7 @@
   }
 }
 
-.title {
+.about__title {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 32px;
@@ -64,7 +64,7 @@
   }
 }
 
-.about-field {
+.about__field {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@
   }
 }
 
-.about-wrapper {
+.about__wrapper {
   height: 300px;
 
   @media screen and (max-width: 767.98px) {
@@ -92,7 +92,7 @@
   }
 }
 
-.about-bgi {
+.about__bgi {
   position: relative;
 
   width: 279px;
@@ -118,7 +118,7 @@
   }
 }
 
-.about-thumb {
+.about__thumb {
   position: absolute;
   top: 22px;
   left: 0;
@@ -175,7 +175,7 @@
   }
 }
 
-.about-part {
+.about__part {
   @media screen and (min-width: 768px) {
     flex-basis: 334px;
   }
@@ -185,7 +185,7 @@
   }
 }
 
-.about-list {
+.about__list {
   max-width: 220px;
   margin-left: auto;
   margin-right: auto;
@@ -208,7 +208,7 @@
   }
 }
 
-.about-values {
+.about__values {
   line-height: 176%;
 
   @media screen and (min-width: 1200px) {
@@ -216,7 +216,7 @@
   }
 }
 
-.about-desc {
+.about__desc {
   line-height: 162%;
 
   @media screen and (min-width: 768px) {
@@ -229,7 +229,7 @@
   }
 }
 
-.about-output {
+.about__output {
   @media screen and (max-width: 767.98px) {
     display: none;
   }
@@ -241,11 +241,11 @@
   }
 }
 
-.about-list-item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-bottom: 4px;
 }
 
-.about-button {
+.about__button {
   width: 164px;
 
   &:hover,

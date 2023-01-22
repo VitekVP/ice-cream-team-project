@@ -1,11 +1,8 @@
-// contacts
-
 .contacts {
   font-weight: 500;
-}
 
-.contacts__container {
   padding-bottom: 60px;
+
   background-image: linear-gradient(
     to bottom,
     transparent 25%,
@@ -15,6 +12,7 @@
 
   @media screen and (min-width: 768px) {
     padding-bottom: 40px;
+
     background-image: linear-gradient(
       to bottom,
       transparent 45%,
@@ -25,6 +23,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 120px;
+
     background-image: linear-gradient(
       to bottom,
       transparent 16%,

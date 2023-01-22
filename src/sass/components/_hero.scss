@@ -1,8 +1,12 @@
+.hero {
+  background: var(--main-bg-color);
+}
+
 .hero__overlay {
   position: relative;
   padding-top: 50px;
   padding-bottom: 232px;
-  background: var(--main-bg-color);
+
   background-image: url(../images/hero/mobile_point@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
